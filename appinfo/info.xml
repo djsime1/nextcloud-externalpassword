@@ -11,7 +11,7 @@
     <namespace>ExternalPassword</namespace>
     <category>customization</category>
     <category>security</category>
-    <bugs>https://git.snyman.info/raoul/external-password/issues</bugs>
+    <bugs>https://git.snyman.info/raoul/externalpassword/issues</bugs>
     <dependencies>
         <nextcloud min-version="15" max-version="15"/>
     </dependencies>
