@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>externalpassword</id>
+    <name>External Password</name>
+    <summary>An app for Nextcloud to allow an administrator to direct a user to an external site for changing their password.</summary>
+    <description><![CDATA[An app for Nextcloud to allow an administrator to direct a user to an external site for changing their password. This is useful in conjunction with an app like external_users.]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="raoul@snyman.info" >Raoul Snyman</author>
+    <namespace>ExternalPassword</namespace>
+    <category>customization</category>
+    <category>security</category>
+    <bugs>https://git.snyman.info/raoul/external-password/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="15" max-version="15"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>External Password</name>
+            <route>externalpassword.page.index</route>
+        </navigation>
+    </navigations>
+</info>
