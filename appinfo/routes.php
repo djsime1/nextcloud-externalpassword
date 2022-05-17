@@ -9,6 +9,6 @@
  */
 return [
     'routes' => [
-	   ['name' => 'Settings#save', 'url' => '/settings/admin/security/externalpassword', 'verb' => 'POST'],
+        ['name' => 'settings#save', 'url' => '/settings', 'verb' => 'POST'],
     ]
 ];

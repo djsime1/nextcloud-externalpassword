@@ -1,0 +1,12 @@
+#security-externalpassword label {
+  display: inline-block;
+  width: 12rem;
+}
+
+#security-externalpassword input[type=text] {
+  width: 30rem;
+}
+
+#security-externalpassword input[type=text].small {
+  width: 12rem;
+}

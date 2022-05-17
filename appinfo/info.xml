@@ -5,7 +5,7 @@
     <name>External Password</name>
     <summary>An app for Nextcloud to allow an administrator to direct a user to an external site for changing their password.</summary>
     <description><![CDATA[An app for Nextcloud to allow an administrator to direct a user to an external site for changing their password. This is useful in conjunction with an app like external_users.]]></description>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <licence>agpl</licence>
     <author mail="raoul@snyman.info" >Raoul Snyman</author>
     <namespace>ExternalPassword</namespace>
@@ -15,12 +15,10 @@
     <repository>https://git.snyman.info/raoul/externalpassword</repository>
     <bugs>https://git.snyman.info/raoul/externalpassword/issues</bugs>
     <dependencies>
-        <nextcloud min-version="22"/>
+        <nextcloud min-version="22" max-version="25" />
     </dependencies>
     <settings>
         <admin>OCA\ExternalPassword\Settings\Admin</admin>
-        <admin-section>OCA\ExternalPassword\Settings\AdminSection</admin-section>
         <personal>OCA\ExternalPassword\Settings\Personal</personal>
-        <personal-section>OCA\ExternalPassword\Settings\PersonalSection</personal-section>
     </settings>
 </info>
