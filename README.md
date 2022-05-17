@@ -1,6 +1,6 @@
 # External Password
 
-An app for Nextcloud to allow an administrator to direct a user to an external site for changing their password. This is useful in conjunction with an app like external_users.
+An app for Nextcloud to allow an administrator to direct a user to an external site for changing their password. This is useful in conjunction with an app like [External User Authentication](https://apps.nextcloud.com/apps/user_external).
 
 Place this app in **nextcloud/apps/**
 

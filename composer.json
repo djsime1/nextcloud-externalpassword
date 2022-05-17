@@ -1,5 +1,5 @@
 {
-    "name": "External Password",
+    "name": "raoul/externalpassword",
     "description": "An app for Nextcloud to allow an administrator to direct a user to an external site for changing their password.",
     "type": "project",
     "license": "AGPL",
