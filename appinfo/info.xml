@@ -5,7 +5,7 @@
     <name>External Password</name>
     <summary>An app for Nextcloud to allow an administrator to direct a user to an external site for changing their password.</summary>
     <description><![CDATA[An app for Nextcloud to allow an administrator to direct a user to an external site for changing their password. This is useful in conjunction with an app like external_users.]]></description>
-    <version>0.1.1</version>
+    <version>1.0.0</version>
     <licence>agpl</licence>
     <author mail="raoul@snyman.info" >Raoul Snyman</author>
     <namespace>ExternalPassword</namespace>

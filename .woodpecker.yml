@@ -1,0 +1,6 @@
+pipeline:
+  test:
+    image: php:7-cli
+    commands:
+      - apt-get update && apt-get install -y make
+      - make test
