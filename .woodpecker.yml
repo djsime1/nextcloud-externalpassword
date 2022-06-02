@@ -1,6 +1,6 @@
 pipeline:
   test:
-    image: php:7-cli
+    image: debian:bullseye
     commands:
-      - apt-get update && apt-get install -y make
+      - apt-get update && apt-get install -y git make php-cli php-zip unzip p7zip-full
       - make test
