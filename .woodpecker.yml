@@ -2,5 +2,5 @@ pipeline:
   test:
     image: debian:bullseye
     commands:
-      - apt-get update && apt-get install -y curl git make php-cli php-zip php-xml unzip p7zip-full
+      - apt-get update && apt-get install -y curl git make php-cli php-mbstring php-xml php-zip unzip p7zip-full
       - make test
