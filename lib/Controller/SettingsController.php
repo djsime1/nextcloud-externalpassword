@@ -47,10 +47,14 @@ class SettingsController extends Controller {
      * @param string $descriptionText
      * @param string $buttonText
 	 */
-	public function save(string $changePasswordUrl, string $descriptionText, string $buttonText): JSONResponse {
+    public function save(string $changePasswordUrl, string $descriptionText, string $buttonText,
+                         string $billingUrl, string $billingDescriptionText, string $billingButtonText): JSONResponse {
         $this->config->setAppValue('externalpassword', 'changePasswordUrl', $changePasswordUrl);
         $this->config->setAppValue('externalpassword', 'descriptionText', $descriptionText);
         $this->config->setAppValue('externalpassword', 'buttonText', $buttonText);
+        $this->config->setAppValue('externalpassword', 'billingUrl', $billingUrl);
+        $this->config->setAppValue('externalpassword', 'billingDescriptionText', $billingDescriptionText);
+        $this->config->setAppValue('externalpassword', 'billingButtonText', $billingButtonText);
         $parameters = [
             'status' => 'success',
             'data' => [

@@ -20,5 +20,7 @@
     <settings>
         <admin>OCA\ExternalPassword\Settings\Admin</admin>
         <personal>OCA\ExternalPassword\Settings\Personal</personal>
+        <personal>OCA\ExternalPassword\Settings\Billing</personal>
+        <personal-section>OCA\ExternalPassword\Sections\Billing</personal-section>
     </settings>
 </info>

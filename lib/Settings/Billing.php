@@ -27,7 +27,7 @@ use OCP\IConfig;
 use OCP\IL10N;
 use OCP\Settings\ISettings;
 
-class Admin implements ISettings {
+class Billing implements ISettings {
 
     /** @var IConfig */
     private $config;
@@ -50,33 +50,29 @@ class Admin implements ISettings {
      * @return TemplateResponse
      */
     public function getForm() {
-        # Password section
-        $changePasswordUrl = $this->config->getAppValue('externalpassword', 'changePasswordUrl', '');
-        $descriptionText = $this->config->getAppValue('externalpassword', 'descriptionText',
-            'Your password is managed externally, please click the button below to change your password.');
-        $buttonText = $this->config->getAppValue('externalpassword', 'buttonText', 'Change password');
-        # Billing section
         $billingUrl = $this->config->getAppValue('externalpassword', 'billingUrl', '');
         $billingDescriptionText = $this->config->getAppValue('externalpassword', 'billingDescriptionText',
             'Your account billing is managed externally, please click the button below to manage your account.');
         $billingButtonText = $this->config->getAppValue('externalpassword', 'billingButtonText', 'Manage billing');
-
         $parameters = [
-            'changePasswordUrl' => $changePasswordUrl,
-            'descriptionText' => $descriptionText,
-            'buttonText' => $buttonText,
             'billingUrl' => $billingUrl,
             'billingDescriptionText' => $billingDescriptionText,
             'billingButtonText' => $billingButtonText
         ];
-        return new TemplateResponse('externalpassword', 'settings/admin', $parameters);
+        return new TemplateResponse('externalpassword', 'settings/billing', $parameters);
     }
 
     /**
      * @return string the section ID, e.g. 'sharing'
      */
     public function getSection() {
-        return 'security';
+        $billingUrl = $this->config->getAppValue('externalpassword', 'billingUrl', '');
+        if (!$billingUrl) {
+            return null;
+        }
+        else {
+            return 'billing';
+        }
     }
 
     /**
