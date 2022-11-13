@@ -5,7 +5,7 @@ use OCP\IL10N;
 use OCP\IURLGenerator;
 use OCP\Settings\IIconSection;
 
-class BillingSection implements IIconSection {
+class Billing implements IIconSection {
     private IL10N $l;
     private IURLGenerator $urlGenerator;
 
@@ -27,6 +27,6 @@ class BillingSection implements IIconSection {
     }
 
     public function getPriority(): int {
-        return 98;
+        return 1;
     }
 }
