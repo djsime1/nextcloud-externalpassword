@@ -91,3 +91,4 @@ sign: appstore
 		--certificate=/certificates/externalpassword.crt
 	docker stop externalpassword-sign
 	cd "$(CURDIR)/dist" && tar -czf externalpassword.tar.gz externalpassword
+	(cd dist && openssl dgst -sha512 -sign ~/.nextcloud/certificates/externalpassword.key externalpassword.tar.gz | openssl base64)
